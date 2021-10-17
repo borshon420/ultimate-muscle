@@ -1,0 +1,9 @@
+.header-section {
+    background-image: url('https://bestwallpapers.in/wp-content/uploads/2018/04/muscles-bodybuilder-dark-black-5k-wallpaer-1024x623.jpg');
+    background-size: cover;
+    height: 800px;
+}
+
+.header-section h1 {
+    color: white;
+}

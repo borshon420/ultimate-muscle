@@ -1,0 +1,13 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 250px;
+    color: white;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.footer-container h1 {
+    color: white;
+}
