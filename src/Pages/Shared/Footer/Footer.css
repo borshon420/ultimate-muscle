@@ -1,13 +1,28 @@
 .footer-container {
+    background-color: black;
+    height: 250px;
+}
+
+.footer-container-2 {
     display: flex;
     justify-content: space-between;
     background-color: black;
-    height: 250px;
+    height: 200px;
+    padding-top: 30px;
     color: white;
-    padding-top: 20px;
     text-align: left;
 }
 
 .footer-container h1 {
     color: white;
 }
+
+/* Make Responsive */
+@media only screen and (max-width: 688px) {
+    .footer-container-2 img {
+        display: none;
+        height: 100px;
+    }
+    
+}
+

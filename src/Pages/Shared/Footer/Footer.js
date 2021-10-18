@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div>
             <div className="footer-container">
-            <Container className="footer-container">
+            <Container className="footer-container-2">
             <div>
                 <img style={{height: '100px'}} src={footerLogo} alt="" />
             </div>
