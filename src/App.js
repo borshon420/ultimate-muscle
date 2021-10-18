@@ -5,6 +5,7 @@ import AuthProvider from './context/AuthProvider';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Register from './Pages/Register/Register';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import Services from './Pages/Services/Services';
@@ -24,15 +25,15 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/services">
+          <PrivateRoute path="/services">
             <Services></Services>
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/serviceDetails/:id">
+          <PrivateRoute path="/serviceDetails/:id">
             <ServiceDetails></ServiceDetails>
-          </Route>
+          </PrivateRoute>
           <Route path="/register">
             <Register></Register>
           </Route>
