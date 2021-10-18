@@ -6,7 +6,7 @@ import LoginLogo from "../../images/logo2.png";
 import "./Login.css";
 
 const Login = () => {
-  const { signInUsingGoogle } = useAuth();
+  const { signInUsingGoogle, handleEmailChange, handlePasswordChange, handleRegistration, error } = useAuth();
   return (
     <div className="login-container">
       <div className="login-content">
@@ -18,13 +18,16 @@ const Login = () => {
           />
         </Link>
         <div className="form-container mx-auto">
-          <Form>
+          <Form onSubmit={handleRegistration}>
             <Form.Group className="mb-4" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Your email" />
+              <Form.Control onBlur={handleEmailChange} type="email" placeholder="Your email" required />
             </Form.Group>
 
             <Form.Group className="mb-4" controlId="formBasicPassword">
-              <Form.Control type="password" placeholder="Your Password" />
+              <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Your Password" required />
+              <div className="text-white">
+              <span>{error}</span>
+            </div>
             </Form.Group>
             <Button className="w-100 mb-4" variant="danger" type="submit">
               Log in
