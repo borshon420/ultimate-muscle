@@ -30,12 +30,12 @@ function App() {
           <PrivateRoute path="/services">
             <Services></Services>
           </PrivateRoute>
-          <Route path="/about">
+          <PrivateRoute path="/about">
             <AboutUs></AboutUs>
-          </Route>
-          <Route path="/classes">
+          </PrivateRoute>
+          <PrivateRoute path="/classes">
             <Classes></Classes>
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
             <Login></Login>
           </Route>

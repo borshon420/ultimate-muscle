@@ -25,21 +25,18 @@ const Classes = () => {
       <Container>
         <div className="classes-img">
           <div className="class-1">
-            <Link to="/services">
-              <img src={classesImg1} alt="" />
-            </Link>
+            <img src={classesImg1} alt="" />
+
             <h1>Gym Ball</h1>
           </div>
           <div className="class-1">
-            <Link to="/services">
-              <img src={classesImg2} alt="" />
-            </Link>
+            <img src={classesImg2} alt="" />
+
             <h1>X Blast</h1>
           </div>
           <div className="class-1">
-            <Link to="/services">
-              <img src={classesImg3} alt="" />
-            </Link>
+            <img src={classesImg3} alt="" />
+
             <h1>Surge</h1>
           </div>
         </div>

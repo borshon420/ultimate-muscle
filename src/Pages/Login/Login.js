@@ -6,10 +6,9 @@ import LoginLogo from "../../images/logo2.png";
 import "./Login.css";
 
 const Login = () => {
-  const { signInUsingGoogle, handleEmailChange, handlePasswordChange, handleRegistration, error } = useAuth();
+  const { signInUsingGoogle, handleEmailChange, handlePasswordChange, handleRegistration, error} = useAuth();
   const history = useHistory()
   const location = useLocation();
-  console.log('came from', location.state?.form)
   const redirect_uri = location.state?.form || '/home'
   const handleGoogleLogin = () => {
     signInUsingGoogle()

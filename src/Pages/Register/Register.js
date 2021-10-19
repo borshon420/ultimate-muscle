@@ -6,7 +6,7 @@ import { Button, Form } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
-  const { handleEmailChange, handlePasswordChange, handleRegistration, error, signInUsingGoogle } = useAuth();
+  const { handleEmailChange, handlePasswordChange, handleRegistration, error, signInUsingGoogle} = useAuth();
   const history = useHistory()
   const location = useLocation();
   console.log('came from', location.state?.form)

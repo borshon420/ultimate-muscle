@@ -53,6 +53,7 @@ const useFirebase = () => {
         })
         
     }
+    
 
     useEffect(()=>{
         const unsubscribed =  onAuthStateChanged(auth, (user) => {
@@ -72,7 +73,7 @@ const useFirebase = () => {
         signInUsingGoogle,
         handleEmailChange,
         handlePasswordChange,
-        handleRegistration
+        handleRegistration,
     }
 }
 
