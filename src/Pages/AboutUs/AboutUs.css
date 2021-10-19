@@ -1,0 +1,33 @@
+.about-us-banner {
+  background-color: black;
+  height: 400px;
+  color: white;
+}
+
+.about-us-banner h1 {
+  font-size: 70px;
+  padding-top: 70px;
+}
+
+/* Make Responsive */
+@media only screen and (max-width: 688px) {
+  .about-us-banner {
+    background-color: black;
+    height: 200px;
+    color: white;
+  }
+
+  .about-us-banner h1 {
+    font-size: 40px;
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 991px){
+    .about-us-banner {
+        background-color: black;
+        height: 300px;
+        color: white;
+      }
+    
+}

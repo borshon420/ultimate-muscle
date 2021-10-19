@@ -20,6 +20,7 @@ const Header = () => {
             <Nav className="nav-link">
               <Link to="/home">Home</Link>
               <Link to="/services">Services</Link>
+              <Link to="/about">About Us</Link>
               {user.email && <span style={{color: 'white', marginRight:'10px'}}>Hello {user.displayName} </span>}
               {user.email ?
               <Button variant="dark" onClick={logOut}>Log out</Button>

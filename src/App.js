@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
+import AboutUs from './Pages/AboutUs/AboutUs';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
@@ -28,6 +29,9 @@ function App() {
           <PrivateRoute path="/services">
             <Services></Services>
           </PrivateRoute>
+          <Route path="/about">
+            <AboutUs></AboutUs>
+          </Route>
           <Route path="/login">
             <Login></Login>
           </Route>

@@ -1,3 +1,13 @@
+.service-banner {
+    background-color: black;
+    height: 500px;
+}
+
+.service-banner h1 {
+    color: white;
+    font-size: 100px;
+}
+
 .services-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
