@@ -1,28 +1,26 @@
 .footer-container {
-    background-color: black;
-    height: 250px;
+  background-color: black;
+  height: 250px;
 }
 
 .footer-container-2 {
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    height: 200px;
-    padding-top: 30px;
-    color: white;
-    text-align: left;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 200px;
+  padding-top: 30px;
+  color: white;
+  text-align: left;
 }
 
 .footer-container h1 {
-    color: white;
+  color: white;
 }
 
 /* Make Responsive */
 @media only screen and (max-width: 688px) {
-    .footer-container-2 img {
-        display: none;
-        height: 100px;
-    }
-    
+  .footer-container-2 img {
+    display: none;
+    height: 100px;
+  }
 }
-

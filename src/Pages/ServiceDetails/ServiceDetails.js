@@ -19,11 +19,9 @@ const ServiceDetails = () => {
         setItem(td);
       }
     });
-}, [data]);
+  }, [data]);
   // let ExactItem = data.filter(td => td.id === _id);
   // console.log(ExactItem)
-
-
 
   return (
     <div className="my-5">

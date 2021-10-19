@@ -6,17 +6,23 @@ import LoginLogo from "../../images/logo2.png";
 import "./Login.css";
 
 const Login = () => {
-  const { signInUsingGoogle, handleEmailChange, handlePasswordChange, handleRegistration, error, user} = useAuth();
-  console.log(user)
-  const history = useHistory()
+  const {
+    signInUsingGoogle,
+    handleEmailChange,
+    handlePasswordChange,
+    handleRegistration,
+    error,
+    user,
+  } = useAuth();
+  console.log(user);
+  const history = useHistory();
   const location = useLocation();
-  const redirect_uri = location.state?.form || '/home'
+  const redirect_uri = location.state?.form || "/home";
   const handleGoogleLogin = () => {
-    signInUsingGoogle()
-    .then(result => {
-        history.push(redirect_uri)
-    })
-  }
+    signInUsingGoogle().then((result) => {
+      history.push(redirect_uri);
+    });
+  };
   return (
     <div className="login-container">
       <div className="login-content">
@@ -33,14 +39,24 @@ const Login = () => {
               <Form.Control type="text" onBlur={handleNameChange} placeholder="Name" />
             </Form.Group> */}
             <Form.Group className="mb-4" controlId="formBasicEmail">
-              <Form.Control onBlur={handleEmailChange} type="email" placeholder="Your email" required />
+              <Form.Control
+                onBlur={handleEmailChange}
+                type="email"
+                placeholder="Your email"
+                required
+              />
             </Form.Group>
 
             <Form.Group className="mb-4" controlId="formBasicPassword">
-              <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Your Password" required />
+              <Form.Control
+                onBlur={handlePasswordChange}
+                type="password"
+                placeholder="Your Password"
+                required
+              />
               <div className="text-white">
-              <span>{error}</span>
-            </div>
+                <span>{error}</span>
+              </div>
             </Form.Group>
             <Button className="w-100 mb-4" variant="danger" type="submit">
               Log in
@@ -48,7 +64,7 @@ const Login = () => {
           </Form>
         </div>
         <div className="mb-3">
-        <Link to="/register">New Here?</Link>
+          <Link to="/register">New Here?</Link>
         </div>
         <Button className="btn btn-primary" onClick={handleGoogleLogin}>
           Google Sign In

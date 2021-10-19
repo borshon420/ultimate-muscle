@@ -1,47 +1,46 @@
 .not-found-page {
-    background-color: black;
-    height: 800px;
+  background-color: black;
+  height: 800px;
 }
 
 .not-found-text {
-    color: white;
-    text-align: left;
-    margin-top: 100px;
+  color: white;
+  text-align: left;
+  margin-top: 100px;
 }
 
 .not-found-text h1 {
-    font-size: 100px;
+  font-size: 100px;
 }
 
 .not-found-text p {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .not-found-text Button {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 /* Make Responsive */
 @media only screen and (max-width: 688px) {
-    .not-found-page {
-        background-color: black;
-        height: 500px;
-    }
+  .not-found-page {
+    background-color: black;
+    height: 500px;
+  }
 
-    .not-found-text h1 {
-        font-size: 30px;
-    }
-    
-    .not-found-text p {
-        font-size: 15px;
-    }
-    
-    .not-found-text Button {
-        color: black;
-        font-size: 15px;
-        font-weight: 400;
-    }
-    
+  .not-found-text h1 {
+    font-size: 30px;
+  }
+
+  .not-found-text p {
+    font-size: 15px;
+  }
+
+  .not-found-text Button {
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+  }
 }

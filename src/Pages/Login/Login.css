@@ -1,36 +1,34 @@
 .login-container {
-    background-color: black;
-    height: 800px;
+  background-color: black;
+  height: 800px;
 }
 
 .login-content {
-    color: white;
-    padding-top: 100px;
+  color: white;
+  padding-top: 100px;
 }
 
 .login-content a {
-    color: white;
+  color: white;
 }
 
 .form-container {
-    width: 25%;
+  width: 25%;
 }
 
 /* Make Responsive */
 @media only screen and (max-width: 688px) {
-    .login-container {
-        background-color: black;
-        height: 600px;
-    }
-    .form-container {
-        width: 75%;
-    }
-    
+  .login-container {
+    background-color: black;
+    height: 600px;
+  }
+  .form-container {
+    width: 75%;
+  }
 }
 
-@media only screen and (min-width: 689px) and (max-width: 991px){
-    .form-container {
-        width: 75%;
-    }
-    
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .form-container {
+    width: 75%;
+  }
 }
