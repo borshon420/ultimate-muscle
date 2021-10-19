@@ -6,7 +6,8 @@ import LoginLogo from "../../images/logo2.png";
 import "./Login.css";
 
 const Login = () => {
-  const { signInUsingGoogle, handleEmailChange, handlePasswordChange, handleRegistration, error} = useAuth();
+  const { signInUsingGoogle, handleEmailChange, handlePasswordChange, handleRegistration, error, user} = useAuth();
+  console.log(user)
   const history = useHistory()
   const location = useLocation();
   const redirect_uri = location.state?.form || '/home'
@@ -28,6 +29,9 @@ const Login = () => {
         </Link>
         <div className="form-container mx-auto">
           <Form onSubmit={handleRegistration}>
+            {/* <Form.Group className="mb-4" controlId="formBasicText">
+              <Form.Control type="text" onBlur={handleNameChange} placeholder="Name" />
+            </Form.Group> */}
             <Form.Group className="mb-4" controlId="formBasicEmail">
               <Form.Control onBlur={handleEmailChange} type="email" placeholder="Your email" required />
             </Form.Group>

@@ -6,10 +6,10 @@ import { Button, Form } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
-  const { handleEmailChange, handlePasswordChange, handleRegistration, error, signInUsingGoogle} = useAuth();
+  const { handleEmailChange, handlePasswordChange, handleRegistration, error, signInUsingGoogle, name, handleNameChange} = useAuth();
+  console.log(name)
   const history = useHistory()
   const location = useLocation();
-  console.log('came from', location.state?.form)
   const redirect_uri = location.state?.form || '/home'
   const handleGoogleLogin = () => {
     signInUsingGoogle()
@@ -30,7 +30,7 @@ const Register = () => {
         <div className="form-container mx-auto">
           <Form onSubmit={handleRegistration}>
             <Form.Group className="mb-4" controlId="formBasicText">
-              <Form.Control type="text" placeholder="Name" />
+              <Form.Control type="text" onBlur={handleNameChange} placeholder="Name" />
             </Form.Group>
 
             <Form.Group className="mb-4" controlId="formBasicEmail">
@@ -43,7 +43,7 @@ const Register = () => {
               <span>{error}</span>
             </div>
             </Form.Group>
-            <Button className="w-100 mb-4" variant="danger" type="submit">
+            <Button className="w-100 mb-4" variant="danger" type="submit" value="submit">
               Register
             </Button>
           </Form>
