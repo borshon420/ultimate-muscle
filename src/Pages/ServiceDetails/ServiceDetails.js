@@ -33,7 +33,7 @@ const ServiceDetails = () => {
           <div className="card-body">
             <h1 className="card-title">{item?.name}</h1>
             <p className="card-text">{item?.description}</p>
-            <Link to="/home">
+            <Link to="/services">
               <Button variant="dark">Back to all Services</Button>
             </Link>
           </div>

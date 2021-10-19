@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './context/AuthProvider';
 import AboutUs from './Pages/AboutUs/AboutUs';
+import Classes from './Pages/Classes/Classes';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
@@ -31,6 +32,9 @@ function App() {
           </PrivateRoute>
           <Route path="/about">
             <AboutUs></AboutUs>
+          </Route>
+          <Route path="/classes">
+            <Classes></Classes>
           </Route>
           <Route path="/login">
             <Login></Login>

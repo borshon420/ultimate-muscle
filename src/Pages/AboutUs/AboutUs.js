@@ -9,7 +9,7 @@ const AboutUs = () => {
   return (
     <div>
       <div className="about-us-banner">
-        <h1>About Us</h1>
+        <h1>ABOUT US</h1>
       </div>
       <Container>
       <div className="about-us-container">
