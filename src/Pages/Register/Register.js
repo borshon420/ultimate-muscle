@@ -1,12 +1,22 @@
 import React from 'react';
 import './Register.css';
 import registerLogo from '../../images/logo2.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import { Button, Form } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
-  const { handleEmailChange, handlePasswordChange, handleRegistration, error } = useAuth();
+  const { handleEmailChange, handlePasswordChange, handleRegistration, error, signInUsingGoogle } = useAuth();
+  const history = useHistory()
+  const location = useLocation();
+  console.log('came from', location.state?.form)
+  const redirect_uri = location.state?.form || '/home'
+  const handleGoogleLogin = () => {
+    signInUsingGoogle()
+    .then(result => {
+        history.push(redirect_uri)
+    })
+  }
     return (
         <div className="login-container">
       <div className="login-content">
@@ -41,6 +51,9 @@ const Register = () => {
         <div className="mb-3 text-white">
         <Link to="/login">Alredy registered?</Link>
         </div>
+        <Button className="btn btn-primary" onClick={handleGoogleLogin}>
+          Google Sign In
+        </Button>
       </div>
     </div>
     );
