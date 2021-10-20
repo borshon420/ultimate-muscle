@@ -16,8 +16,7 @@ const Login = () => {
     processLogin,
     name,
     email,
-    password
-    
+    password,
   } = useAuth();
   // console.log(user);
   // console.log(email);
@@ -31,7 +30,6 @@ const Login = () => {
     });
   };
 
-  
   return (
     <div className="login-container">
       <div className="login-content">
@@ -64,9 +62,16 @@ const Login = () => {
                 <span>{error}</span>
               </div>
             </Form.Group>
-            <input onClick={(e)=> {e.preventDefault();
-processLogin()}} value="Log in" className="w-100 mb-4" variant="danger" type="submit" />
-              
+            <input
+              onClick={(e) => {
+                e.preventDefault();
+                processLogin();
+              }}
+              value="Log in"
+              className="w-100 mb-4"
+              variant="danger"
+              type="submit"
+            />
           </Form>
         </div>
         <div className="mb-3">

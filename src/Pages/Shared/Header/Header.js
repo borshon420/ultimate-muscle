@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Nav, Navbar, Spinner } from "react-bootstrap";
+import { Button, Container, Nav, Navbar} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import logo from "../../../images/logo2.png";
@@ -7,9 +7,6 @@ import "./Header.css";
 
 const Header = () => {
   const { user, logOut } = useAuth();
-  // if (isLoading) {
-  //   return <Spinner animation="border" variant="dark" />;
-  // }
   return (
     <div>
       <>
@@ -46,10 +43,7 @@ const Header = () => {
                   </span>
                 )}
 
-                {/* {user.email ?
-              <Button variant="dark" onClick={logOut}>Log out</Button>
-              :
-              <Link to="/login">Login</Link>} */}
+                
               </Nav>
             </Navbar.Collapse>
           </Container>
