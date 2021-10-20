@@ -10,13 +10,8 @@ const Login = () => {
     signInUsingGoogle,
     handleEmailChange,
     handlePasswordChange,
-    handleRegistration,
     error,
-    user,
-    processLogin,
-    name,
-    email,
-    password,
+    processLogin
   } = useAuth();
   // console.log(user);
   // console.log(email);

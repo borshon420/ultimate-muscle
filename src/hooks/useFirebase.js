@@ -39,7 +39,6 @@ const useFirebase = () => {
   const handleRegistration = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    console.log(email, password);
     if (password.length < 6) {
       setError("Password must be 6 character long");
       return;
@@ -102,7 +101,6 @@ const useFirebase = () => {
       .catch((error) => {
         setError(error.message);
       });
-    // .finally(() => setIsLoading(false));
   };
 
   useEffect(() => {
@@ -112,7 +110,6 @@ const useFirebase = () => {
       } else {
         setUser({});
       }
-      // setIsLoading(false);
     });
     return () => unsubscribed;
   }, []);

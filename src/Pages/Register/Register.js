@@ -66,7 +66,7 @@ const Register = () => {
             </Form.Group>
             <Button
               className="w-100 mb-4"
-              variant="danger"
+              variant="light"
               type="submit"
               value="submit"
             >
