@@ -13,8 +13,15 @@ const Login = () => {
     handleRegistration,
     error,
     user,
+    processLogin,
+    name,
+    email,
+    password
+    
   } = useAuth();
-  console.log(user);
+  // console.log(user);
+  // console.log(email);
+  // console.log(password);
   const history = useHistory();
   const location = useLocation();
   const redirect_uri = location.state?.form || "/home";
@@ -23,6 +30,8 @@ const Login = () => {
       history.push(redirect_uri);
     });
   };
+
+  
   return (
     <div className="login-container">
       <div className="login-content">
@@ -34,10 +43,7 @@ const Login = () => {
           />
         </Link>
         <div className="form-container mx-auto">
-          <Form onSubmit={handleRegistration}>
-            {/* <Form.Group className="mb-4" controlId="formBasicText">
-              <Form.Control type="text" onBlur={handleNameChange} placeholder="Name" />
-            </Form.Group> */}
+          <Form>
             <Form.Group className="mb-4" controlId="formBasicEmail">
               <Form.Control
                 onBlur={handleEmailChange}
@@ -58,9 +64,9 @@ const Login = () => {
                 <span>{error}</span>
               </div>
             </Form.Group>
-            <Button className="w-100 mb-4" variant="danger" type="submit">
-              Log in
-            </Button>
+            <input onClick={(e)=> {e.preventDefault();
+processLogin()}} value="Log in" className="w-100 mb-4" variant="danger" type="submit" />
+              
           </Form>
         </div>
         <div className="mb-3">

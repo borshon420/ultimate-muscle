@@ -6,10 +6,10 @@ import logo from "../../../images/logo2.png";
 import "./Header.css";
 
 const Header = () => {
-  const { user, logOut, isLoading } = useAuth();
-  if (isLoading) {
-    return <Spinner animation="border" variant="dark" />;
-  }
+  const { user, logOut } = useAuth();
+  // if (isLoading) {
+  //   return <Spinner animation="border" variant="dark" />;
+  // }
   return (
     <div>
       <>
