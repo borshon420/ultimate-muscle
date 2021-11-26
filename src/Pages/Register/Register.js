@@ -12,13 +12,11 @@ const Register = () => {
     handleRegistration,
     error,
     signInUsingGoogle,
-    name,
     handleNameChange,
   } = useAuth();
-  console.log(name);
   const history = useHistory();
   const location = useLocation();
-  const redirect_uri = location.state?.form || "/home";
+  const redirect_uri = location.state?.from || "/home";
   const handleGoogleLogin = () => {
     signInUsingGoogle().then((result) => {
       history.push(redirect_uri);

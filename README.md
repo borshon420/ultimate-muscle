@@ -1,13 +1,15 @@
-# This is a Muscle Gym Website
+# ULTIMATE GYM Website
+[Website link](https://muscle-gym-website.web.app/).
 
-• Health related website.
-• This website created for learning and exploring react.
-• I created private route if you are not logged in you don't see all functionality.
-• I created contact form and google sign in method using fire base.
+• Health care related website\
+• This is a private route-based website\
+• Users can not see all the pages if they are not logged in\
+• Once they logged in they can see all the page's content\
+• Created contact form and google sign in method using fire base\
 • Responsive for all device.
 
 
-This project was bootstrapped with [Website link](https://muscle-gym-website.web.app/).
+
 
 
 
